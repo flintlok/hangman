@@ -40,7 +40,6 @@ donkey
 thorny devil
 mouse'''
 
-
 def random_animal(): #Gets a random animal from a list
     animal_list = animals.split()
     i = random.randint(0,39)
@@ -58,16 +57,14 @@ def play():
     while True:
         try: #Gets number of moves
             moves = int(input('How many moves do you want? (6-15)\n'))
-
             if moves < 6 or moves > 15:
                 print('\nPlease input a number within the limit!')
                 moves = int(input('How many moves do you want? (6-15)\n'))
-            break
+            break     
             
         except ValueError: 
             print('\nPlease input a valid number!')
             
-
     animal = random_animal()
     censored_animal = ''
 
